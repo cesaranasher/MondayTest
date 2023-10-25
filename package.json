@@ -1,0 +1,51 @@
+{
+  "name": "monday-react-quickstart-app",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "react-scripts --openssl-legacy-provider start",
+    "build": "react-scripts build",
+    "expose": "mtunnel -p 8301",
+    "server": "react-scripts start",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "stop": "kill-port 8301 && kill-port 4049 && kill-port 4040"
+  },
+  "dependencies": {
+    "@mondaycom/apps-cli": "^1.3.4",
+    "@mondaycom/apps-sdk": "^0.1.4",
+    "browserslist": "^4.22.1",
+    "crypto-browserify": "^3.12.0",
+    "monday-sdk-js": "^0.1.4",
+    "monday-ui-react-core": "^1.54.0",
+    "path-browserify": "^1.0.1",
+    "react-scripts": "^4.0.3"
+  },
+  "eslintConfig": {
+    "extends": "react-app"
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "@mondaydotcomorg/tunnel": "^0.4.1",
+    "concurrently": "^5.2.0",
+    "cross-port-killer": "^1.2.1",
+    "eslint-config-react-app": "^7.0.1",
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0",
+    "sass": "^1.54.8"
+  },
+  "browser": {
+    "crypto": false
+  }
+}
